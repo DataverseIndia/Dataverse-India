@@ -4,11 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-      "start": "node index.js",
-      "build": "tsc",
-      "db:generate": "drizzle-kit generate:pg",
-      "db:push": "drizzle-kit push:pg",
-      "db-introspect": "drizzle-kit introspect:pg"
+      "start": "node index.js"
     },
     "keywords": [],
     "author": "",
