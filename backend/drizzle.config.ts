@@ -3,13 +3,9 @@ import 'dotenv/config';
 
 export default {
     schema: './src/config/schema.ts',
-    driver: 'mysql2',
+    driver: 'pg',
     out: './drizzle',
     dbCredentials: {
-        host: 'srv1000.hstgr.io',
-        port: 3306,
-        user: 'datavers',
-        database: 'u581162093_oeuvars',
-        password: '/V09vx/S8m',
+        connectionString: process.env.DATABASE_URL,
     },
 } satisfies Config;

@@ -1,8 +1,7 @@
 import { serial, text, pgTable, timestamp } from "drizzle-orm/pg-core";
-import postgres from 'postgres'
-import { drizzle } from 'drizzle-orm/postgres-js'
+import postgres from 'postgres';
+import { drizzle } from 'drizzle-orm/postgres-js';
 import { eq } from "drizzle-orm";
-
 export const blogs = pgTable('blogs', {
     id: serial('id').primaryKey(),
     email: text('email').notNull(),
@@ -28,20 +27,15 @@ export const blogs = pgTable('blogs', {
     image_url: text('image_url'),
     published_at: timestamp('published_at')
 });
-
 export const admins = pgTable('admins', {
     name: text('name').notNull(),
     email: text('email').notNull(),
     password: text('password').notNull(),
     last_login: timestamp('last_login')
-})
-
+});
 // export type Blogs = typeof blogs.$inferSelect;
 // export type New = typeof blogs.$inferInsert;
-
 const client = postgres(process.env.DATABASE_URL);
 export const db = drizzle(client);
-
-export const getUserByEmail = async (email: string) => await db.select().from(admins).where(eq(admins.email, email));
-
-
+export const getUserByEmail = async (email) => await db.select().from(admins).where(eq(admins.email, email));
+//# sourceMappingURL=schema.js.map

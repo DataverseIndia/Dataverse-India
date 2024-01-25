@@ -1,6 +1,6 @@
 {
-  "id": "db6f3eb6-cb30-4843-8946-2cfe50ba8eaf",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "id": "e67f6dc8-56e5-4cd8-8c04-9484518cd77f",
+  "prevId": "db6f3eb6-cb30-4843-8946-2cfe50ba8eaf",
   "version": "5",
   "dialect": "pg",
   "tables": {
@@ -25,6 +25,12 @@
           "type": "text",
           "primaryKey": false,
           "notNull": true
+        },
+        "last_login": {
+          "name": "last_login",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
         }
       },
       "indexes": {},

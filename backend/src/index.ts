@@ -4,7 +4,7 @@ import cookieParser from 'cookie-parser';
 import compression from 'compression';
 import cors from 'cors';
 import 'dotenv/config';
-import { router } from './src/routes/userRoutes';
+import { router } from './routes/userRoutes';
 const app = express();
 
 const PORT = process.env.PORT || 5000

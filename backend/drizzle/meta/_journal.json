@@ -1,12 +1,19 @@
 {
   "version": "5",
-  "dialect": "mysql",
+  "dialect": "pg",
   "entries": [
     {
       "idx": 0,
       "version": "5",
-      "when": 1696766554452,
-      "tag": "0000_unique_chimera",
+      "when": 1706202605798,
+      "tag": "0000_salty_thor_girl",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1706203303910,
+      "tag": "0001_fancy_sunset_bain",
       "breakpoints": true
     }
   ]
